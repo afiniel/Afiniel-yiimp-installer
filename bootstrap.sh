@@ -10,12 +10,12 @@
 #
 #########################################################
 if [ -z "${TAG}" ]; then
-	TAG=v2.57
+	TAG=v1.0
 fi
 
 
-# Clone the MultiPool repository if it doesn't exist.
-if [ ! -d $HOME/multipool ]; then
+# Clone the Afiniel-yiimp-installer repository if it doesn't exist.
+if [ ! -d $HOME/Afiniel-yiimp-installer ]; then
 	if [ ! -f /usr/bin/git ]; then
 		echo Installing git . . .
 		apt-get -q -q update
@@ -23,23 +23,23 @@ if [ ! -d $HOME/multipool ]; then
 		echo
 	fi
 
-	echo Downloading MultiPool Installer ${TAG}. . .
+	echo Downloading Afiniel-yiimp-installer Installer ${TAG}. . .
 	git clone \
 		-b ${TAG} --depth 1 \
-		https://github.com/afiniel/multipool_setup \
-		"$HOME"/multipool/install \
+		https://github.com/afiniel/Afiniel-yiimp-installer_setup \
+		"$HOME"/Afiniel-yiimp-installer/install \
 		< /dev/null 2> /dev/null
 
 	echo
 fi
 
 # Set permission and change directory to it.
-cd $HOME/multipool/install
+cd $HOME/Afiniel-yiimp-installer/install
 
 # Update it.
-sudo chown -R $USER $HOME/multipool/install/.git/
+sudo chown -R $USER $HOME/Afiniel-yiimp-installer/install/.git/
 if [ "${TAG}" != `git describe --tags` ]; then
-	echo Updating MultiPool Installer to ${TAG} . . .
+	echo Updating Afiniel Yiimp installer to ${TAG} . . .
 	git fetch --depth 1 --force --prune origin tag ${TAG}
 	if ! git checkout -q ${TAG}; then
 		echo "Update failed. Did you modify something in `pwd`?"
@@ -49,4 +49,4 @@ if [ "${TAG}" != `git describe --tags` ]; then
 fi
 
 # Start setup script.
-bash $HOME/multipool/install/start.sh
+bash $HOME/Afiniel-yiimp-installer/install/start.sh

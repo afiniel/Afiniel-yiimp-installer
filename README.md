@@ -1,4 +1,4 @@
-## Afiniel YiiMP Server Installer 🚀
+## Afiniel Yiimp Installer 🚀
 Need Help? join us <a href="https://discord.gg/GVZ4tchkKc"><img src="https://img.shields.io/discord/904564600354254898.svg?style=flat&label=Discord %3C3%20&color=7289DA%22" alt="Join Community Badge"/></a>
 
 
@@ -8,13 +8,12 @@ Need Help? join us <a href="https://discord.gg/GVZ4tchkKc"><img src="https://img
 
 All in one, this installer install all that your server need.
 
-**Afiniel YiiMP Server installer!** Automates most of the tedious tasks of the following releases:
+**Afiniel Yiimp installer!** Automates most of the tedious tasks of the following releases:
 
 * YiiMP
-* NOMP Coming Soon
-* MPOS coming Soon
-* CryptoNote-Nodejs Coming Soon
-* Generic faucet script Coming Soon
+* NOMP Coming Soon...
+* MPOS coming Soon...
+* Mode comming soon...
 
 ## TOC
 
@@ -29,7 +28,7 @@ Installation:
 Requires a fresh Ubuntu 16.04 or Ubuntu 18.04 installation.
 
 ```
-curl https://raw.githubusercontent.com/afiniel/Multi-Pool-Installer/master/bootstrap.sh | bash
+curl https://raw.githubusercontent.com/afiniel/Afiniel-yiimp-installer/master/bootstrap.sh | bash
 ```
 
 Update:
@@ -37,7 +36,7 @@ Update:
 When a new release is made public updating is as simple as running the same command as above.
 
 ```
-curl https://raw.githubusercontent.com/afiniel/Multi-Pool-Installer/master/bootstrap.sh | bash
+curl https://raw.githubusercontent.com/afiniel/Afiniel-yiimp-installer/master/bootstrap.sh | bash
 ```
 
 ## ▶️ Usage
@@ -47,7 +46,7 @@ You need run the installer under root or an existing account. If you already hav
 
 After rebooting the server to your user to start the installer type:
 ```
-multipool
+Afiniel-yiimp-installer
 ```
 
 ## ⚙️ YiiMP Install

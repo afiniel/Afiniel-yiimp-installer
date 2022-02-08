@@ -4,7 +4,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="multipool_setup" />
-    <orderEntry type="module" module-name="multipool_yiimp_single" />
+    <orderEntry type="module" module-name="Afiniel-yiimp-installer" />
+    <orderEntry type="module" module-name="Afiniel-yiimp-installer" />
   </component>
 </module>
